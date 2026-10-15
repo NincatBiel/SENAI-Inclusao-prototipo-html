@@ -10,36 +10,33 @@
 <body>
     <header><!--Cabeçalho da logo + botões de acessibilidade-->
         
-        <div> <!--Logo-->
-            <img src="assets/large-icon.png" alt="SENAI Inclusão">
-        </div>
+        <!--Logo-->
+        <img src="assets/large-icon.png" alt="SENAI Inclusão" class="logo">
         
-        <div> <!--Botões de acessibilidade-->
+        <div class="buttons"> <!--Botões de acessibilidade-->
         
-            <button> <!--Contraste-->
+            <button onclick="" id="contraste"> <!--Contraste-->
                 <img src="assets/contrast-icon.png" alt="Botão de Contraste">
                 Contraste 
             </button>
-        
-            <div> <!--Botão de diminuir e de aumentar fonte-->
-                <button>A-</button> | <button>A+</button>
-            </div>
-        
+            
+            <!--Botão de diminuir e de aumentar fonte--> <!--A+ tem que ser Aa pq A+ n pega em css-->
+            <button class="alter-font"> <a onclick="" id="A-">A-</a> | <a onclick="" id="Aa">A+</a></button>
+            
         </div>
-
     </header>
 
     <main>
 
-        <div> <!--alguma coisa dizendo que o ambiente é seguro-->
-            <div> <!--mensagem bonitinha + check-->
+        <div> <!--alguma coisa dizendo que o ambiente é seguro + imagem random-->
+            <div class="check-mensagem"> <!--mensagem bonitinha + check-->
                 <img src="assets/check.png" alt="Símbolo verde de check">
-                <p id="Ambiente-protegido">Ambiente protegido, inclusivo e feito para você aprender com autonomia</p>
+                <p>Ambiente protegido, inclusivo e feito para você aprender com autonomia</p>
             </div>
-            <img src="assets/alunos-login-page.png" alt="Alunos diversos interagindo entre si"> <!--imagem bonitinha proposta-->
+            <img src="assets/alunos-login-page.png" alt="Alunos diversos interagindo entre si" id="alunos-imagem"> <!--imagem bonitinha proposta-->
         </div>
 
-        <div> <!--área para fazer o login-->
+        <div class="area-login"> <!--área para fazer o login-->
             <h2>Portal de Aprendizagem</h2>
             <h1>Acesse sua conta</h1>
             <p>Entre com seus dados para continuar sua jornada de aprendizagem.</p>
@@ -68,8 +65,10 @@
             </form>
 
             <p>Primeiro acesso</p> <!--add tracinhos de cada lado-->
-            <img src="assets/question.png">
-            <p>Precisa de ajuda para acessar? <a href="uma tela de suporte">Fale com o suporte</a></p>
+            <div class="question-ajuda">
+                <img src="assets/question.png">
+                <p>Precisa de ajuda para acessar? <a href="uma tela de suporte">Fale com o suporte</a></p>
+            </div>
 
         </div>
 
