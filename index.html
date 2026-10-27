@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gabriel Ramos">
     <link rel="stylesheet" href="styles/main-styles.css">
     <link rel="stylesheet" href="styles/login.css">
     <link rel="icon" href="assets/page-icon.png">
@@ -22,7 +23,7 @@
             </button>
             
             <!--Botão de diminuir e de aumentar fonte--> <!--A+ tem que ser Aa pq A+ n pega em css-->
-            <button class="alter-font"> <a onclick="" id="A-">A-</a> | <a onclick="" id="Aa">A+</a></button>
+            <button class="alter-font"> <a href="#" onclick="diminuirfonte()" id="A-">A-</a> | <a href="#" onclick="aumentarfonte()" id="Aa">A+</a></button>
             
         </div>
     </header>
@@ -44,25 +45,29 @@
             
             <form action="">
             <p>Usuário</p>
-            <label for="Usuario">
+            <label for="Usuario" class="usuario">
                 <img src="assets/user.png" alt="Bonequinho de usuário">
                 <input type="text" placeholder="Insira sua matrícula">
             </label>
             
             <p>Senha</p>
-            <label for="Senha">
-                <img src="assets/locker.png" alt="Cadeado">
-                <input type="text" placeholder="Insira sua senha">
+            <label for="Senha" class="senha">
+                <div>
+                    <img src="assets/locker.png" alt="Cadeado">
+                    <input type="text" placeholder="Insira sua senha">
+                </div>
                 <button><img src="assets/eye.png" alt="Ver senha"></button>
             </label>
             
-            <label for="Lembrar-acesso">
-                <input type="checkbox">Lembrar meu acesso
-            </label>
+            <div class="acesso-senha">
+                <label for="Lembrar-acesso" class="lembrar-acesso">
+                    <input type="checkbox">Lembrar meu acesso
+                </label>
+                <a href="inserir pagina de senha">Esqueci minha senha</a>
+            </div>
             
-            <a href="inserir pagina de senha">Esqueci minha senha</a>
-            
-            <button type="submit">Entrar</button>
+            <br>
+            <button type="submit" id="entrar">Entrar</button>
             </form>
 
             <p>Primeiro acesso</p> <!--add tracinhos de cada lado-->
@@ -74,8 +79,6 @@
         </div>
 
     </main>
-    <button onclick="window.location.href='web/avisos-publi.html'"> Web </button> <!--temporario--> 
-    <button onclick="window.location.href='mobile/perfil.html'"> Mobile </button> <!--temporario-->
 </body>
 </html>
 

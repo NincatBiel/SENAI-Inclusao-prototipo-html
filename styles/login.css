@@ -74,8 +74,73 @@ main{
         color: #64748B;
     }
 
+    form{
+
+        label{
+            background-color: #EEF4F8;
+            
+
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            
+        }
+
+        input{
+            border-style: none;
+            background-color: #EEF4F8;
+        }
+    }
+
 }
 
+#entrar{
+    background-color: #005CAA;
+        color: white;
+        border-style: none;
+        border-radius: 5px;
+}
+
+.acesso-senha{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    a:hover{
+        text-decoration: underline;
+    }
+}
+
+.lembrar-acesso{
+    color: #64748B;
+    label{
+    border-style: none;
+    }
+}
+
+/*================================= Campos de usuario e senha =================================*/
+
+.usuario,.senha{
+    border-style: solid;
+    border-color: #CBD5E1;
+}
+
+.usuario{
+    img{
+        width: 14px;
+        height: 16px;
+    }
+}
+
+.senha{
+
+    div{
+        img{
+            width: 15px;
+            height: 18px;
+        }
+    }
+}
 
 /*================================= Port pra celular =================================*/
 @media screen and (max-width: 440px){
