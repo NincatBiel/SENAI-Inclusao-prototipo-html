@@ -1,0 +1,89 @@
+/*================================= Head =================================*/
+header{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.buttons{
+    display:flex;
+    flex-direction: row;
+
+    button{
+        background-color: white;
+
+        border-color: #D1E0EC;
+        border-style: solid;
+        border-width: 0.05px;
+        border-radius: 5px;
+    }
+}
+
+/*================================= botões melhor separado =================================*/
+
+.alter-font{
+    display: flex;
+    color: #CBD5E1;
+    
+}
+
+/*teve que ser Aa pq A+ n funciona*/
+#Aa{
+    color: #005CAA;
+
+}
+
+#A-{
+    color: #64748B;
+
+}
+
+/*================================= main =================================*/
+
+main{
+    display: flex;
+    flex-direction: row;
+    gap: 3vw;
+    justify-self: center;
+}
+
+/*================================= (check+mensagem) + imagem =================================*/
+
+.check-mensagem{
+    display: flex;
+    flex-direction: row;
+    color: #475569;
+}
+
+.question-ajuda{
+    display: flex;
+    flex-direction: row;
+}
+
+/*================================= area de login =================================*/
+.area-login{
+    h2{
+        color: #005CAA;
+    }
+
+    h1{
+        color: #00274B;
+    }
+
+    p{
+        color: #64748B;
+    }
+
+}
+
+
+/*================================= Port pra celular =================================*/
+@media screen and (max-width: 440px){
+    header{
+    display:flex;
+    flex-direction: column-reverse;
+    
+
+    }
+
+}
