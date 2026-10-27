@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+    font-family: "Inter", sans-serif;
+    background-color: #EEF4F8;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+}
+/*================================= Port pra celular =================================*/
+@media screen and (max-width: 440px){
+
+}

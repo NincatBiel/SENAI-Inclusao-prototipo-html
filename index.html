@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main-styles.css">
+    <link rel="stylesheet" href="styles/login.css">
+    <link rel="icon" href="assets/page-icon.png">
+    <title>Login | Senai Inclusão</title>
+</head>
+<body>
+    <header><!--Cabeçalho da logo + botões de acessibilidade-->
+        
+        <!--Logo-->
+        <img src="assets/large-icon.png" alt="SENAI Inclusão" class="logo">
+        
+        <div class="buttons"> <!--Botões de acessibilidade-->
+        
+            <button onclick="" id="contraste"> <!--Contraste-->
+                <img src="assets/contrast-icon.png" alt="Botão de Contraste">
+                Contraste 
+            </button>
+            
+            <!--Botão de diminuir e de aumentar fonte--> <!--A+ tem que ser Aa pq A+ n pega em css-->
+            <button class="alter-font"> <a href="#" onclick="diminuirfonte()" id="A-">A-</a> | <a href="#" onclick="aumentarfonte()" id="Aa">A+</a></button>
+            
+        </div>
+    </header>
+
+    <main>
+
+        <div> <!--alguma coisa dizendo que o ambiente é seguro + imagem random-->
+            <div class="check-mensagem"> <!--mensagem bonitinha + check-->
+                <img src="assets/check.png" alt="Símbolo verde de check">
+                <p>Ambiente protegido, inclusivo e feito para você aprender com autonomia</p>
+            </div>
+            <img src="assets/alunos-login-page.png" alt="Alunos diversos interagindo entre si" id="alunos-imagem"> <!--imagem bonitinha proposta-->
+        </div>
+
+        <div class="area-login"> <!--área para fazer o login-->
+            <h2>Portal de Aprendizagem</h2>
+            <h1>Acesse sua conta</h1>
+            <p>Entre com seus dados para continuar sua jornada de aprendizagem.</p>
+            
+            <form action="">
+            <p>Usuário</p>
+            <label for="Usuario" class="usuario">
+                <img src="assets/user.png" alt="Bonequinho de usuário">
+                <input type="text" placeholder="Insira sua matrícula">
+            </label>
+            
+            <p>Senha</p>
+            <label for="Senha" class="senha">
+                <div>
+                    <img src="assets/locker.png" alt="Cadeado">
+                    <input type="text" placeholder="Insira sua senha">
+                </div>
+                <button><img src="assets/eye.png" alt="Ver senha"></button>
+            </label>
+            
+            <div class="acesso-senha">
+                <label for="Lembrar-acesso" class="lembrar-acesso">
+                    <input type="checkbox">Lembrar meu acesso
+                </label>
+                <a href="inserir pagina de senha">Esqueci minha senha</a>
+            </div>
+            
+            <br>
+            <button type="submit" id="entrar">Entrar</button>
+            </form>
+
+            <p>Primeiro acesso</p> <!--add tracinhos de cada lado-->
+            <div class="question-ajuda">
+                <img src="assets/question.png">
+                <p>Precisa de ajuda para acessar? <a href="uma tela de suporte">Fale com o suporte</a></p>
+            </div>
+
+        </div>
+
+    </main>
+</body>
+</html>
+
+<!--devo fazer as telas mobile13 e web04->

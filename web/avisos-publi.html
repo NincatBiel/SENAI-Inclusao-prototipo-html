@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gabriel Ramos">
+    <link rel="stylesheet" href="../styles/main-styles.css">
+    <link rel="stylesheet" href="../styles/avisos-publicacao.css">
+    <title>Publicação de Avisos | Senai Inclusão</title>
+</head>
+<body>
+    <header> <!--Logo + título da página-->
+        <!--Logo-->
+        <img src="../assets/large-icon.png" alt="SENAI Inclusão" class="logo">
+        Publicação de Notificações
+</header>
+
+<main>
+<div class="button-bar"> <!--Botões de acesso às outras páginas-->
+    <button class="other-pages"> Cadastro </button>
+    <button class="other-pages"> Mapas e Rotas </button>
+    <button class="other-pages"> Interdição de trechos </button>
+    <button class="actual-page"> Notificações </button>
+    <button class="other-pages"> Painel de ciência </button>
+    <button class="other-pages"> Suporte </button>
+    <button class="sair"> Sair </button>
+</div>
+
+<div>
+    Título do Comunicado
+    <input type="text" placeholder="Título do aviso">
+
+    Tipo
+    Institucional
+    Extraordinário
+    Fluxo e Ocupação
+
+    Texto do comunicado
+    <input type="text" placeholder="Descrição do comunicado">
+    Selecionar Turma
+    
+    <select name="" id="">
+        <option value="">Todas as turmas</option>
+        <option value="">Tec 206.050</option>
+        <option value="">Tec 206.048</option>
+        <option value="">Tec 22.762</option>
+    </select>
+
+    Entrega
+    Enviar agora
+    Agendar
+    12/10/2026
+    06:45
+</div>
+
+<div>
+    Pré visualização dos canais
+    <div class="card">
+        <h1 class="card-title">Texto</h1>
+        Entre pelo portão B. O corredor, nhenhennhe (texto grande demais)
+    </div>
+
+    <div class="card">
+        <h1 class="card-title">Áudio (voz sintetizada)</h1>
+        <audio controls>
+            <source src="seu-audio.mp3" type="audio/mpeg">
+            Seu navegador não suporta o elemento de áudio.
+        </audio>
+    </div>
+    <div class="card">
+        <h1 class="card-title">Libras</h1>
+        Avatar
+        vídeo ou avatar
+    </div>
+    <div class="card"> <!--(esse, fudeu)-->
+        <h1 class="card-title">Pictogramas</h1>
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+    </div>
+
+</div>
+
+<button id="publicar" type="submit"> Publicar comunicado </button> <!-- maybe i will need to connect it to a form(not maybe, i actually will)-->
+<button id="cancelar" type="reset"> Cancelar </button>
+
+</main>
+</body>
+</html>
