@@ -43,20 +43,20 @@
             <h1>Acesse sua conta</h1>
             <p>Entre com seus dados para continuar sua jornada de aprendizagem.</p>
             
-            <form action="">
+            <form id="login-form">
             <p>Usuário</p>
             <label for="Usuario" class="usuario">
                 <img src="assets/user.png" alt="Bonequinho de usuário">
-                <input type="text" placeholder="Insira sua matrícula">
+                <input type="text" placeholder="Insira sua matrícula" id="user">
             </label>
             
             <p>Senha</p>
             <label for="Senha" class="senha">
                 <div>
                     <img src="assets/locker.png" alt="Cadeado">
-                    <input type="text" placeholder="Insira sua senha">
+                    <input type="text" placeholder="Insira sua senha" id="password">
                 </div>
-                <button><img src="assets/eye.png" alt="Ver senha"></button>
+                <button aria-label="Mostrar senha" onclick="mostrarsenha()" ><img src="assets/eye.png" alt="Ver senha"></button>
             </label>
             
             <div class="acesso-senha">
@@ -75,10 +75,13 @@
                 <img src="assets/question.png">
                 <p>Precisa de ajuda para acessar? <a href="uma tela de suporte">Fale com o suporte</a></p>
             </div>
-
         </div>
-
     </main>
+    <p>Enquanto o login n roda <br>
+        <a href="web/avisos-publi.html">Publicação de avisos</a><br>
+        <a href="mobile/perfil.html">Perfil mobile</a>
+    </p>
+    <script src="login.js"></script>
 </body>
 </html>
 

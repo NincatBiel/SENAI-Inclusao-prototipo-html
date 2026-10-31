@@ -9,12 +9,9 @@ button:hover{
     cursor: pointer;
 }
 
-<<<<<<< HEAD
-=======
 a{
     text-decoration: none;
 }
->>>>>>> 1b82a1229a6bf7627442f501998af13f1113f656
 /*================================= Port pra celular =================================*/
 @media screen and (max-width: 440px){
 

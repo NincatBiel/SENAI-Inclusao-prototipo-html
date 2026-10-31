@@ -27,18 +27,26 @@
 </div>
 
 <div>
-    Título do Comunicado
-    <input type="text" placeholder="Título do aviso">
+<form id="publish-form">
+    <label for="">
+        Título do Comunicado
+        <input type="text" placeholder="Título do aviso">
+    </label>
 
     Tipo
-    Institucional
-    Extraordinário
-    Fluxo e Ocupação
+    <input type="radio">
+    <label for="">Institucional</label>
+    
+    <input type="radio">
+    <label for="">Extraordinário</label>
+    
+    <input type="radio">
+    <label for="">Fluxo e Ocupação</label>
 
     Texto do comunicado
     <input type="text" placeholder="Descrição do comunicado">
-    Selecionar Turma
     
+    Selecionar Turma
     <select name="" id="">
         <option value="">Todas as turmas</option>
         <option value="">Tec 206.050</option>
@@ -47,10 +55,16 @@
     </select>
 
     Entrega
-    Enviar agora
-    Agendar
-    12/10/2026
-    06:45
+    <input type="radio">
+    <label for="">Enviar agora</label>
+    
+    <input type="radio">
+    <label for="">Agendar</label>
+    
+    <input type="date" placeholder="00/00/2026">
+    <input type="time" placeholder="00:00">
+    
+</form>
 </div>
 
 <div>
